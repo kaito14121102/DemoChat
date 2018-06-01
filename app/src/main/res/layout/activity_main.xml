@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.anime.rezero.demochat.MainActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:hint="http://192.168.43.186:3000"
+                android:id="@+id/edit_ip"
+                android:layout_margin="16dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:hint="username"
+                android:id="@+id/edit_user"
+                android:layout_margin="16dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btn_dangky1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/add1"
+                android:textAllCaps="false" />
+            <Button
+                android:id="@+id/btn_dangky"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="16dp"
+                android:background="@drawable/add1"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+
+
+        android:id="@+id/lv_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp">
+
+    </ListView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:hint="Message"
+            android:id="@+id/edit_chat"
+            android:layout_margin="16dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:background="@drawable/send1"
+            android:layout_margin="16dp"
+            android:id="@+id/btn_chat"
+            android:textAllCaps="false"
+            android:layout_width="48dp"
+            android:layout_height="48dp"  />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/image1"
+            android:id="@+id/btn_chonanh"
+            android:layout_width="48dp"
+            android:layout_height="48dp"  />
+        <Button
+            android:id="@+id/btn_chupanh"
+            android:background="@drawable/camera1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"  /> />
+        <Button
+            android:layout_marginLeft="60dp"
+            android:id="@+id/btn_ok"
+            android:background="@drawable/sendimgae"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="16dp"
+            android:id="@+id/btn_ghiam"
+            android:background="@drawable/record1"
+            android:layout_width="48dp"
+            android:layout_height="48dp"  />
+        <Button
+            android:layout_marginLeft="32dp"
+            android:id="@+id/btn_dungghiam"
+            android:background="@drawable/stop"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+        <Button
+            android:layout_marginLeft="32dp"
+            android:id="@+id/btn_gui"
+            android:background="@drawable/check"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+        <Button
+            android:layout_marginLeft="32dp"
+            android:background="@drawable/sendrecord"
+            android:id="@+id/btn_lay"
+            android:layout_width="48dp"
+            android:layout_height="48dp" />
+    </LinearLayout>
+
+</LinearLayout>
